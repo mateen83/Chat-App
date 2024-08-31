@@ -1,0 +1,305 @@
+
+
+
+/**** Imported API's ****/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins&family=Satisfy&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
+.main-container {
+  height: 100%;
+  align-items: center;    /* Vertically */
+  justify-content: center;    /* Horizontally */
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(135deg, #1E201E, #3A3A3A); Gradient from #1E201E to a lighter gray */
+  background: #1E1E1E;
+
+  overflow: auto;
+}
+
+/************ Navbar starts ************/
+.navbar {
+  height: 40px;
+}
+nav .navbar-nav li a {
+  color: white !important;
+}
+#logo {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+}
+.nav-link {
+  height: 30px;
+}
+.nav-icon {
+  height: 32px;
+  width: 32px;
+  float: right;
+}
+/************ Navbar Ends ************/
+
+/***************** Chat-Box Section *******************/
+.chat-section {  
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+  width: 600px;
+  max-width: 90%;
+  padding-bottom: 20px;
+  border-radius: 20px 20px 15px 15px;
+  /* background: #1E1E1E; */
+  background: #121212;
+position: relative;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.brand {
+    background: #121212;
+   border-radius: 20px 20px 0 0;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+
+}
+.brand h2 {
+  font-family: 'Caveat', cursive;
+  margin-left: 20px;
+  text-shadow: 2px 2px rgb(111 110 111 / 95%);
+  font-size: 28px;
+  color: white;
+
+}
+
+
+/********* Message Display Area starts ***********/
+.message-area {
+  height: 445px;
+  padding: 16px;
+  padding-top: 40px;
+  /* padding-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #3C3D37, #2B2C28); /* Gradient from #3C3D37 to a darker shade */
+
+}
+
+.message {
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 30px;
+  max-width: 300px;
+  position: relative;
+}
+
+.message h4 {
+  position: absolute;
+  top: -21px;
+  left: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.outgoing {
+    /* background: linear-gradient(135deg, #FFA900, #CC8B00); Gradient from #FFA900 to a darker shade */
+
+    background: #0074CC;
+    /* background:
+    #c7b049;
+    background: #dab600;
+    background: #a98600;
+    background: #e0bc00; */
+  color: white;
+  margin-left: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.incoming {
+
+background: #2C2C2C;    
+color: white;
+  float: left;
+  width: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Ensure images are responsive */
+.message img {
+  max-width: 100%; /* Limit image width to container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners for images */
+}
+
+/********* Messenger Area Starts ************/
+.messenger {
+  border-radius: 50%;
+}
+
+/******** Text-Editor starts *********/
+.text-editor-header {
+    /* background: #1E1E1E; */
+        background: #121212;
+    
+
+  padding: 1px;
+}
+
+.text-editor-header .btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.text-editor-header .btn .icon-color:hover {
+  color: rgb(192, 187, 187);
+}
+
+.icon-color {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+}
+/******** Text-Editor Ends *********/
+
+/********** Textarea Starts **********/
+#textarea {
+  margin: 5px 10px;
+  padding: 15px;
+  font-size: 14px;
+  width: calc(100% - 70px); /* Adjust width considering button size */
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 8px;
+  outline: none;
+  background: linear-gradient(135deg, #3C3D37, #4E4F46); /* Gradient from #3C3D37 to a medium gray-green */
+
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+/************ Textarea Ends *************/
+hr {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+#send-btn {
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  margin-top: 15px;
+  margin-right: 5px;
+  background: #249b52;
+  /* padding-right: 70px; */
+  margin-right: -3px;
+  margin-bottom: 15px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#send-btn:hover {
+  background-color: white !important;
+  border: 1px solid black;
+  color: #249b52 !important;
+}
+
+#send {
+  font-size: 14px;
+}
+/********* Messenger Area Ends ************/
+
+/***** Footer CSS *****/
+#footer {
+  margin: auto;
+  font-size: 13px;
+  color: rgb(224, 217, 234);
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* placeholder code */
+[contentEditable=true]:empty:before {
+  content: attr(placeholder);
+  opacity: 0.6;
+}
+
+/* Hide file input by default */
+.file-input {
+  display: none;
+}
+
+
+.message {
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 30px;
+  max-width: 300px;
+  position: relative;
+  word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+  overflow-wrap: break-word; /* Handle long text that could otherwise overflow */
+}
+
+.message p {
+  word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+  overflow-wrap: break-word; /* Handle long text that could otherwise overflow */
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    #send-btn {
+        width: 50px; /* Set a fixed width */
+        height: 50px; /* Set a fixed height */
+        margin-top: 15px;
+        margin-bottom: 17px;
+        margin-right: -4px;
+
+        background: #249b52;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+  
+      .nav-link {
+        height: 30px;
+        display: none;
+      }
+      #logo {
+        font-family: 'Caveat', cursive;
+        font-size: 25px;
+        display: none;
+
+      }
+      .message {
+        max-width: 85%; /* Adjust max-width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+      }
+    
+  }
+  
